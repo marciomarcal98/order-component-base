@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 87.5%;
+}
+
+:root {
+  --blue-100: #f5f7ff;
+  --blue-200: #e0e8ff;
+  --blue-400: #3829e0;
+  --blue-500: #766CF1;
+  --blue-600: #7280a7;
+  --blue-800: #1f2f56;
+}
+
+body {
+  background: var(--blue-200) url('./images/pattern-background-mobile.svg') no-repeat;
+  background-size: 100%;
+  padding: 1.5rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+section {
+  min-width: 20.4375rem;
+  max-width: 28.125rem;
+  border-radius: 20px;
+  background: #fff;
+}
+
+section > figure {
+  margin-bottom: 0.75rem;
+}
+
+section > figure img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.informations {
+  padding: 1.5rem;
+}
+
+.description {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.description h1 {
+  margin-bottom: 1rem;
+  color: var(--blue-800);
+  font-weight: 900;
+}
+
+.description p {
+  color: var(--blue-600);
+  font-weight: 500;
+  line-height: 1.5625rem;
+  font-size: 1rem;
+}
+
+.plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  background: var(--blue-100);
+  padding: 1rem;
+  border-radius: 12px;
+  font-size: 1rem;
+}
+
+.plan-type {
+  display: flex;
+  align-items: center;
+}
+
+.plan-type figure {
+  margin-right: 1.25rem;
+}
+
+.plan-type__description p {
+  color: var(--blue-600);
+}
+
+.plan-type__description p strong {
+  color: var(--blue-800);
+}
+
+.plan-change a {
+  color: var(--blue-400);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.plan-change a:hover {
+  text-decoration: none;
+  color: var(--blue-500);
+}
+
+.payment button {
+  padding: 1rem;
+  background: var(--blue-400);
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+  width: 100%;
+  color: #fff;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.payment button:hover {
+  background: var(--blue-500);
+  cursor: pointer;
+}
+
+.payment span {
+  display: block;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1rem;
+  color: var(--blue-600);
+}
+
+.payment span:hover {
+  color: var(--blue-800);
+  cursor: pointer;
+}
+
+@media(min-width: 450px) {
+  html {
+    font-size: 93.75%;
+  }
+
+  section > figure {
+    margin: 0;
+  }
+
+  .informations {
+    padding: 48px;
+  }
+}
+
+@media(min-width: 700px) {
+  html {
+    font-size: 100%;
+  }
+
+  body {
+    background: var(--blue-200) url('./images/pattern-background-desktop.svg') no-repeat;
+  }
+}
